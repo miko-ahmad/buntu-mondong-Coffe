@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Menu } from 'lucide-react'; // Mengimpor Menu dari lucide-react
+import Logo from '../assets/img/LOGO.png'
 
 export default function NavbarComp() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,7 +10,7 @@ export default function NavbarComp() {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
       <a href="#">
           <img
-            src="./src/assets/img/LOGO.png"  // Ganti dengan path logo Anda
+            src={Logo}  // Ganti dengan path logo Anda
             alt="Logo BMC"
             className="h-8" // Anda bisa menyesuaikan ukuran logo sesuai keinginan
           />
