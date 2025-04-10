@@ -7,7 +7,13 @@ export default function NavbarComp() {
   return (
     <nav className="bg-amber-900 text-white p-4 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">BMC</h1>
+      <a href="#">
+          <img
+            src="./src/assets/img/LOGO.png"  // Ganti dengan path logo Anda
+            alt="Logo BMC"
+            className="h-8" // Anda bisa menyesuaikan ukuran logo sesuai keinginan
+          />
+        </a>
         <button
           className="md:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
